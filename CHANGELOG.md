@@ -11,6 +11,7 @@ x.x.x Release notes (yyyy-MM-dd)
 * Allow for `EPERM` to be returned from `fallocate()`. This improves support for running on Linux environments with interesting file systems, like AWS Lambda. Thanks to [@ztane](https://github.com/ztane) for reporting and suggesting a fix. ([realm/realm-core#4957](https://github.com/realm/realm-core/issues/4957) and [#1832](https://github.com/realm/realm-js/issues/1832))
 * Sync progress notifiers would not trigger when the downloadable bytes size would equal 0. ([realm/realm-core#4989](https://github.com/realm/realm-core/pull/4989), since v10.3.0-rc.1)
 
+
 ### Compatibility
 * MongoDB Realm Cloud.
 * Realm Studio v11.0.0.
@@ -20,6 +21,7 @@ x.x.x Release notes (yyyy-MM-dd)
 ### Internal
 * Upgraded Realm Core from v11.4.1 to v10.5.2.
 * Change Apple/Linux temporary directory to default to the environment's `TMPDIR` if available. This is primarily used by tests. ([realm/realm-core#4921](https://github.com/realm/realm-core/issues/4921))
+* Adding use of [ccache](https://ccache.dev/) in build scripts, XCode projects and the integration tests GHA workflow.
 
 10.9.1 Release notes (2021-10-20)
 =============================================================
